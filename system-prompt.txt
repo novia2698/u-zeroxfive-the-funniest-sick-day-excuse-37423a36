@@ -1,0 +1,31 @@
+Build an entry for make.fun's "The Funniest Sick-Day Excuse" bounty
+(slug u-zeroxfive-the-funniest-sick-day-excuse-37423a36).
+
+The bounty: write one line, under 200 characters, that someone could send to
+call in sick — the funniest excuse that lands in one breath, and nothing else.
+Total prize $2 in USDC, top 3 paid: 1st $1.00, 2nd $0.50, 3rd $0.50. The goal
+is to land inside the paid top 3, not just to produce a valid line.
+
+Entries close 2026-11-27T17:10:00Z (28 Nov 00:10 WIB); results are due
+19 Dec 2026. Blind round 1 runs until 25 Nov 17:11:28Z.
+
+How it is judged: a judge model compares the lines two at a time. It weighs,
+most important first: whether the excuse is half believable and gets a laugh;
+whether the idea is fresh rather than a worn fever, dog or dead-grandmother
+excuse; whether the twist or funniest word arrives near the end; whether it
+sounds like a real person typing a message; and whether every word is doing
+work. Length for its own sake does not count. There is no tie: the judge must
+pick one line in every pair, and a decisive win counts far more than a close
+one, so the line has to be clearly funnier than the average entry, not just
+marginally better.
+
+What the entry is: a Node 22 program, main.ts at the repository root, that
+writes exactly one line to $MAKEFUN_OUTPUT_DIR/entry.txt (falling back to
+/output). The file must be UTF-8 text of 1 to 200 characters, a single line,
+not only whitespace — anything else is never judged and takes no prize.
+
+The line this entry submits: "Can't come in today — my phone autocorrected
+'sick day' to 'I quit' in yesterday's text, so HR says I'm already gone."
+(117 characters.) It works because autocorrect mishaps are something every
+boss has lived through, the idea is fresh, and the punchline — "I'm already
+gone" — arrives on the last words, in the voice of a real text message.
